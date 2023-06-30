@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matthis pretium forecasting</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="static/navbar.css">
+    <link rel="stylesheet" href="static/bottombar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/script.js"></script>
+    
+</head>
+<body>
+  <div class="navbar">
+    <div class="Prognostica">Adeptus Prognostica</div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a href="{{ url_for('Home') }}" class="active">Home</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="Funkcja1">Funkcja 1</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=WdlIKy2lJ_g" class="Funkcja2">Funkcja 2</a>
+            </li>
+            <li>
+              <a href="{{ url_for('About') }}" class="About">O nas</a>
+          </li>
+            <li>
+                <a href="{{ url_for('Login') }}" class="Login">Login</a>
+            </li>
+            <li>
+                    <div id="flag1" class="flag-item" >
+                      <img src="static/PL_flag.svg.png" alt="Flag 1">
+                    </div>
+                    <div id="flag2" class="flag-item" >
+                        <img src="static/UK_flag.png" alt="Flag 2">
+                      </div>
+                      <div id="flag3" class="flag-item" >
+                        <img src="static/SPQR_flag.png" alt="Flag 3">
+                      </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+    
+    <section>
+        <div class="title">Prognozowanie</div>
+        
+    </section>
+    <section>
+        <div class="Prognozowanie-obszar">
+            <div class="wrapper">
+              <div class="powierzchnia-tekst tekst">Powierzchnia:</div>
+              <input type="number" class="powierzchnia-input input" placeholder="Wpisz liczbę" />
+            </div>
+            <div class="wrapper">
+              <div class="pokoje-tekst tekst">Pokoje:</div>
+              <input type="number" class="pokoje-input input" placeholder="Wpisz liczbę" />
+            </div>
+            <div class="prostokatne-pole">
+              <h1 class="prognozowana-cena">Prognozowana cena</h1>
+            </div>
+          </div>
+        <img id="zdjecie-prawo" src="static/Palac.jpg" alt="Zdjęcie-prawo" class="palac-image" >
+    </section>
+    <footer>
+        <div class="Pasek_dolny">
+            <div class="Pasek_dolny_lewy">
+                <span class="Wersja_programu">Wersja programu: Beta 0.98.3</span>
+            </div>
+            <div class="Pasek_dolny_prawy">
+                <span class="Autorzy">Autorzy: Jakub Kołodziej i Piotr Wieczorek</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/usr/share/javascript/jquery/jquery.min.js"></script>
+    <audio id="background-music" loop>
+      <source src="static/divinitus.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
