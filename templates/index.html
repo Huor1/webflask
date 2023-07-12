@@ -83,7 +83,11 @@
             <button type="submit">Estymuj cenę</button>
         </form>
     
-        <div id="result"></div>
+        <div id="result">
+          <h2>Estymowana cena:</h2>
+          <p id="estimatedPrice"></p>
+      </div>
+  
           </div>
         <img id="zdjecie-prawo" src="static/Palac.jpg" alt="Zdjęcie-prawo" class="palac-image" >
     </section>
@@ -101,5 +105,29 @@
     <audio id="background-music" loop>
       <source src="static/divinitus.mp3" type="audio/mpeg">
     </audio>
+
+    <script>
+      document.getElementById("priceForm").addEventListener("submit", function(event) {
+          event.preventDefault();  // Zapobiega domyślnemu przeładowaniu strony po kliknięciu przycisku "submit"
+
+          var formData = new FormData(this);  // Tworzy obiekt FormData z danymi formularza
+
+          // Wysyła żądanie POST do API estimate_price
+          fetch("/estimate_price", {
+              method: "POST",
+              body: formData
+          })
+          .then(response => response.json())  // Przetwarza odpowiedź jako JSON
+          .then(data => {
+              // Wyświetla estymowaną cenę na stronie
+              document.getElementById("estimatedPrice").innerText = data.estimated_price;
+          })
+          .catch(error => {
+              // Obsługa błędu w przypadku nieudanego żądania
+              console.error("Błąd żądania: ", error);
+          });
+      });
+  </script>
+
 </body>
 </html>
