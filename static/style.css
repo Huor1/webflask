@@ -65,14 +65,161 @@ padding: 11px; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę 
   border: 1px solid #333;
   padding: 5px;
 }
-.pokoje-tekst {
+
+#offer_type{
   background-image: linear-gradient(to top, #d8c6c6, #949090);
-  color: #aa10be;
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
+  margin-top: 0px;
   margin-left: 0%;
-  padding: 11px; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
+
+label[for="offer_type"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#area {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="area"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#rooms {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="rooms"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0;
+}
+
+#rooms {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+#offer_type_of_building{
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="offer_type_of_building"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#market {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="market"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#city_name {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="city_name"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#city_name {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="city_name"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#voivodeship {
+  background-image: linear-gradient(to top, #d8c6c6, #949090);
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 0%;
+  padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
+}
+
+label[for="voivodeship"]{
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
 .prostokatne-pole {
   position: absolute;
   width: 100%;
@@ -93,4 +240,26 @@ padding: 11px; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę 
 }
 .closed {
   display: none;
+}
+
+.form-row-left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row-left label {
+  margin-right: 10px;
+  width: 150px; /* Dostosuj szerokość etykiety według potrzeb */
+}
+
+.form-row-right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row-right label {
+  margin-right: 10px;
+  width: 150px; /* Dostosuj szerokość etykiety według potrzeb */
 }
