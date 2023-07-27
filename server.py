@@ -90,7 +90,7 @@ def estimate_price():
 
     # Tutaj implementuj swoją logikę estymacji ceny na podstawie danych z żądania
     # W tym przykładzie zwracamy estymowaną cenę jako odpowiedź JSON
-    estimated_price = 500000.0
+    estimated_price = area+rooms
 
     return jsonify({'estimated_price': estimated_price})
 
