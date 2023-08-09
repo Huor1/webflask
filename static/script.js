@@ -167,9 +167,8 @@ $(document).ready(function() {
 
   // Po kliknięciu przycisku "Estymuj cenę"
   $("#priceForm").submit(function(e) {
-    e.preventDefault(); // Zapobiega domyślnej akcji formularza (przeładowania strony)
+    e.preventDefault();
 
-    // Dane z formularza
     var formData = {
       offer_type: $("#offer_type").val(),
       area: parseFloat($("#area").val()),
@@ -178,26 +177,26 @@ $(document).ready(function() {
       market: $("#market").val(),
       city_name: $("#city_name").val(),
       voivodeship: $("#voivodeship").val(),
-      floor: parseInt($("#floor").val()), // Dodana wartość floor
+      floor: parseInt($("#floor").val()),
     };
 
-    // Wysłanie żądania POST do serwera
+    var api_key = 'Q164PyagcHzwdwqvbHXKYtgkYdgrOgbq'; // Wstaw swój klucz tutaj
+
     $.ajax({
       type: "POST",
-      url: "http://382ac124-926d-4f00-b545-867d0ca18c9d.germanywestcentral.azurecontainer.io/score", // Tutaj wstaw URL Azure
+      url: "http://382ac124-926d-4f00-b545-867d0ca18c9d.germanywestcentral.azurecontainer.io/score",
       data: JSON.stringify({ Inputs: { WebServiceInput0: [formData] }, GlobalParameters: {} }),
       contentType: "application/json",
+      headers: { 'Authorization': 'Bearer ' + api_key }, // Dodaj nagłówek z kluczem uwierzytelniającym
       success: function(data) {
-        // Aktualizacja pola "Estymowana cena" po otrzymaniu odpowiedzi od serwera
         $("#estimatedPrice").text(data.Results.WebServiceOutput0[0].predicted_price);
       },
       error: function() {
-        // Obsługa błędu
         alert("Wystąpił błąd podczas komunikacji z modelem na Azure.");
       },
     });
   });
-
+  
   // Obsługa zdarzenia kliknięcia na dokument
   $(document).click(function(event) {
     var target = $(event.target);
