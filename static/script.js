@@ -159,7 +159,7 @@ $("#priceForm").submit(function(e) {
 
       $.ajax({
         type: "POST",
-        url: "http://382ac124-926d-4f00-b545-867d0ca18c9d.germanywestcentral.azurecontainer.io/score",
+        url: "https://382ac124-926d-4f00-b545-867d0ca18c9d.germanywestcentral.azurecontainer.io/score", // Zmieniony na HTTPS
         contentType: "application/json",
         data: JSON.stringify(azureFormData),
         success: function(result) {
