@@ -180,7 +180,7 @@ $(document).ready(function() {
       floor: parseInt($("#floor").val()),
     };
 
-    var api_key = 'Q164PyagcHzwdwqvbHXKYtgkYdgrOgbq'; // Wstaw swój klucz tutaj
+    var api_key = 'q4jvGuegZYwii21vDzX1W5I7g0tfSGz4'; // Wstaw swój klucz tutaj
 
     $.ajax({
       type: "POST",
