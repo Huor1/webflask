@@ -102,5 +102,9 @@ def About():
 def Login():
     return render_template("test_login.html")
 
+@app.route("/function1")
+def function1():
+    return render_template("function1.html")  # Nowa funkcja zwraca szablon function1.html
+
 if __name__ == '__main__':
     app.run()

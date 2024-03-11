@@ -1,11 +1,3 @@
-window.addEventListener("DOMContentLoaded", function() {
-  var hamburger = document.querySelector(".hamburger");
-  hamburger.onclick = function() {
-    var navBar = document.querySelector(".nav-bar");
-    navBar.classList.toggle("active");
-  };
-});
-
 $(document).ready(function() {
   var programVersion = " Beta 0.19.3"; // Numer programu
 
@@ -59,7 +51,7 @@ $(document).ready(function() {
         ".Dane_uzytkownika": "Dane użytkownika",
         ".Wersja_programu": "Wersja programu" + programVersion,
         ".Autorzy": "Autorzy Jakub Kołodziej i Piotr Wieczorek",
-        ".title": "Estymowanie cen nieruchomości",
+        ".title": "Estymowanie cen nieruchomości", // Przywrócenie poprzedniej nazwy tytułu
         ".pokoje-tekst": "Pokoje:",
         ".powierzchnia-tekst": "Powierzchnia:",
         ".prognozowana-cena": "Prognozowana cena",
@@ -196,7 +188,7 @@ $(document).ready(function() {
       },
     });
   });
-  
+
   // Obsługa zdarzenia kliknięcia na dokument
   $(document).click(function(event) {
     var target = $(event.target);
@@ -238,4 +230,31 @@ $(document).ready(function() {
   if ($("#flag3").hasClass("open")) {
     playMusic();
   }
+
+  // Po kliknięciu na "Funkcja 1"
+  $(".Funkcja1").click(function() {
+    // Zmień nazwę nagłówka na "Estymowanie cen auta"
+    $(".title").text("Estymowanie cen auta");
+  });
+
+  // Dodaj funkcję translateElements do zmiany tytułu na stronie index.html
+  function translateTitle(language) {
+    if (language === "pl") {
+      $(".title").text("Estymowanie cen nieruchomości");
+    } else if (language === "en") {
+      $(".title").text("Real estate price estimation");
+    } else if (language === "spqr") {
+      $(".title").text("Projecting verus praedium prices");
+    }
+  }
+
+  // Wywołaj funkcję translateTitle z odpowiednim językiem po kliknięciu na flagę
+  $("#flag1, #flag2, #flag3").click(function() {
+    var language = $(this).attr("data-lang");
+    translateTitle(language);
+  });
+
+  // Wywołaj funkcję translateTitle z odpowiednim językiem przy ładowaniu strony
+  var defaultLanguage = $("#flag1").attr("data-lang");
+  translateTitle(defaultLanguage);
 });
