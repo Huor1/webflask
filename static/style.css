@@ -76,12 +76,16 @@ padding: 11px; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę 
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="offer_type"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 #area {
@@ -94,12 +98,16 @@ label[for="offer_type"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="area"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 #rooms {
@@ -112,15 +120,19 @@ label[for="area"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="rooms"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
-#rooms {
+#floor {
   background-image: linear-gradient(to top, #d8c6c6, #949090);
   color: #000000;
   font-size: 16px;
@@ -140,12 +152,16 @@ label[for="rooms"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="offer_type_of_building"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 #market {
@@ -158,12 +174,16 @@ label[for="offer_type_of_building"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="market"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 #city_name {
@@ -176,12 +196,16 @@ label[for="market"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="city_name"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 #city_name {
@@ -194,12 +218,16 @@ label[for="city_name"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="city_name"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 #voivodeship {
@@ -212,12 +240,16 @@ label[for="city_name"]{
   padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
 }
 
-label[for="voivodeship"]{
-  color: red;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 0%;
-  margin-left: 0%;
+label {
+  background-color: #f2f2f2; /* Szary tło dla etykiety */
+  padding: 5px 10px; /* Padding wewnątrz prostokąta */
+  border-radius: 4px; /* Lekko zaokrąglone rogi */
+  display: inline-block; /* Etykieta jako element liniowo-blokowy */
+  margin-bottom: 5px; /* Margines poniżej etykiety */
+  font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+  color: #333; /* Ciemnoszary tekst */
+  width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+  box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
 }
 
 .prostokatne-pole {

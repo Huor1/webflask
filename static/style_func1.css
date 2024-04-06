@@ -76,12 +76,16 @@
     padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
   }
   
-  label[for="Mark"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
+  label {
+    background-color: #f2f2f2; /* Szary tło dla etykiety */
+    padding: 5px 10px; /* Padding wewnątrz prostokąta */
+    border-radius: 4px; /* Lekko zaokrąglone rogi */
+    display: inline-block; /* Etykieta jako element liniowo-blokowy */
+    margin-bottom: 5px; /* Margines poniżej etykiety */
+    font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+    color: #333; /* Ciemnoszary tekst */
+    width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+    box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
   }
   
   #Model {
@@ -94,15 +98,19 @@
     padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
   }
   
-  label[for="Model"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
+  label {
+    background-color: #f2f2f2; /* Szary tło dla etykiety */
+    padding: 5px 10px; /* Padding wewnątrz prostokąta */
+    border-radius: 4px; /* Lekko zaokrąglone rogi */
+    display: inline-block; /* Etykieta jako element liniowo-blokowy */
+    margin-bottom: 5px; /* Margines poniżej etykiety */
+    font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+    color: #333; /* Ciemnoszary tekst */
+    width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+    box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
   }
-  
-  #rooms {
+
+  #Year {
     background-image: linear-gradient(to top, #d8c6c6, #949090);
     color: #000000;
     font-size: 16px;
@@ -112,15 +120,19 @@
     padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
   }
   
-  label[for="rooms"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0;
+  label {
+    background-color: #f2f2f2; /* Szary tło dla etykiety */
+    padding: 5px 10px; /* Padding wewnątrz prostokąta */
+    border-radius: 4px; /* Lekko zaokrąglone rogi */
+    display: inline-block; /* Etykieta jako element liniowo-blokowy */
+    margin-bottom: 5px; /* Margines poniżej etykiety */
+    font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+    color: #333; /* Ciemnoszary tekst */
+    width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+    box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
   }
   
-  #rooms {
+  #Vol_engine {
     background-image: linear-gradient(to top, #d8c6c6, #949090);
     color: #000000;
     font-size: 16px;
@@ -130,7 +142,19 @@
     padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
   }
   
-  #offer_type_of_building{
+  label {
+    background-color: #f2f2f2; /* Szary tło dla etykiety */
+    padding: 5px 10px; /* Padding wewnątrz prostokąta */
+    border-radius: 4px; /* Lekko zaokrąglone rogi */
+    display: inline-block; /* Etykieta jako element liniowo-blokowy */
+    margin-bottom: 5px; /* Margines poniżej etykiety */
+    font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+    color: #333; /* Ciemnoszary tekst */
+    width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+    box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
+  }
+  
+  #Fuel {
     background-image: linear-gradient(to top, #d8c6c6, #949090);
     color: #000000;
     font-size: 16px;
@@ -140,86 +164,18 @@
     padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
   }
   
-  label[for="offer_type_of_building"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
+  label {
+    background-color: #f2f2f2; /* Szary tło dla etykiety */
+    padding: 5px 10px; /* Padding wewnątrz prostokąta */
+    border-radius: 4px; /* Lekko zaokrąglone rogi */
+    display: inline-block; /* Etykieta jako element liniowo-blokowy */
+    margin-bottom: 5px; /* Margines poniżej etykiety */
+    font-size: 14px; /* Mniejszy rozmiar czcionki dla etykiet */
+    color: #333; /* Ciemnoszary tekst */
+    width: calc(100% - 20px); /* Szerokość etykiety dostosowana do paddingu */
+    box-sizing: border-box; /* Aby padding nie wpływał na zewnętrzne wymiary */
   }
-  
-  #market {
-    background-image: linear-gradient(to top, #d8c6c6, #949090);
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-left: 0%;
-    padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
-  }
-  
-  label[for="market"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  
-  #city_name {
-    background-image: linear-gradient(to top, #d8c6c6, #949090);
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-left: 0%;
-    padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
-  }
-  
-  label[for="city_name"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  
-  #city_name {
-    background-image: linear-gradient(to top, #d8c6c6, #949090);
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-left: 0%;
-    padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
-  }
-  
-  label[for="city_name"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  
-  #voivodeship {
-    background-image: linear-gradient(to top, #d8c6c6, #949090);
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-left: 0%;
-    padding: 3%; /* Dodaj odpowiednią wartość w pikselach lub inną jednostkę */
-  }
-  
-  label[for="voivodeship"]{
-    color: red;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  
+
   .prostokatne-pole {
     position: absolute;
     width: 100%;
@@ -231,13 +187,7 @@
     bottom: 0; /* Przyleganie do dolnej krawędzi kontenera rodzica */
     
   }
-  .palac-image {
-    width: 15%; /* Dostosuj szerokość obrazka według potrzeb */
-    height: 70%; /* Dostosuj wysokość obrazka według potrzeb */
-    position: absolute;
-    top: 25.45%;
-    right: 0.5%;
-  }
+ 
   .closed {
     display: none;
   }
