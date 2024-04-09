@@ -100,7 +100,11 @@ def About():
 
 @app.route("/Login")
 def Login():
-    return render_template("test_login.html")
+    return render_template("login.html")
+
+@app.route("/Register")
+def Register():
+    return render_template("register.html")
 
 @app.route("/function1")
 def function1():

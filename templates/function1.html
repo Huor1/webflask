@@ -21,10 +21,13 @@
     <nav class="nav-bar">
         <ul>
             <li><a href="{{ url_for('Home') }}" class="active">Home</a></li>
-            <li><a href="{{ url_for('function1') }}">Funkcja 1</a></li>
+            <li><a href="{{ url_for('function1') }}" class="Funkcja1">Funkcja 1</a></li>
             <li><a href="https://www.youtube.com/watch?v=WdlIKy2lJ_g" class="Funkcja2">Funkcja 2</a></li>
             <li><a href="{{ url_for('About') }}" class="About">O nas</a></li>
             <li><a href="{{ url_for('Login') }}" class="Login">Login</a></li>
+            <li>
+                <a href="{{ url_for('Register') }}" class="Register">Register</a>
+            </li>
             <li>
                 <div id="flag1" class="flag-item"><img src="static/PL_flag.svg.png" alt="Flag 1"></div>
                 <div id="flag2" class="flag-item"><img src="static/UK_flag.png" alt="Flag 2"></div>

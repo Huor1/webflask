@@ -2,7 +2,7 @@ $(document).ready(function() {
   var programVersion = " Beta 0.19.3"; // Numer programu
 
   // Funkcja do zmiany tła
-  var imagesUKPL = ["static/zdj1.jpg", "static/zdj2.jpg", "static/zdj3.jpg"];
+  var imagesUKPL = ["static/zdj1.png", "static/zdj2.png", "static/zdj3.png"];
   var imagesSPQR = ["static/zdj4.jpg", "static/zdj5.jpg", "static/zdj6.jpg"];
   var currentImageIndex = 0;
   var clickedFlag = $("#flag1"); // Domyślnie ustawiona flaga UK
@@ -45,98 +45,103 @@ $(document).ready(function() {
 
     if (language === "pl") {
       translations = {
-          "Zaloguj": "Zaloguj",
-          'label[for="username"]': "Login:",
-          'label[for="password"]': "Hasło:",
-          ".Dane_uzytkownika": "Dane użytkownika",
-          ".Wersja_programu": "Wersja programu" + programVersion,
-          ".Autorzy": "Autorzy Jakub Kołodziej i Piotr Wieczorek",
-          ".title": "Estymowanie cen nieruchomości",
-          ".pokoje-tekst": "Pokoje:",
-          ".powierzchnia-tekst": "Powierzchnia:",
-          ".prognozowana-cena": "Prognozowana cena",
-          ".active": "Strona główna",
-          ".Funkcja1": "Funkcja 1",
-          ".Funkcja2": "Funkcja 2 ",
-          ".About": "O nas",
-          ".Login": "Login",
-          '.offer_type': 'Typ oferty',
-          '.floor': 'Piętro',
-          '.area': 'Metraż',
-          '.rooms': 'Liczba pokoi',
-          '#offer_type_of_building': 'Typ budynku',
-          '#market': 'Rynek',
-          '#city_name': 'Miasto',
-          '#voivodeship': 'Województwo',
+        "Zaloguj": "Zaloguj",
+        'label[for="username"]': "Login:",
+        'label[for="password"]': "Hasło:",
+        ".Dane_uzytkownika": "Dane użytkownika",
+        ".Wersja_programu": "Wersja programu" + programVersion,
+        ".Autorzy": "Autorzy Jakub Kołodziej i Piotr Wieczorek",
+        ".title": "Estymowanie cen nieruchomości",
+        ".prognozowana-cena": "Prognozowana cena",
+        ".active": "Home",
+        ".Funkcja1": "Funkcja 1",
+        ".Funkcja2": "Funkcja 2 ",
+        ".About": "O nas",
+        ".Login": "Zaloguj",
+        ".Register": "Zarejestruj",
+        'offer_type': 'Typ oferty','offer_type': 'Typ oferty',
+        'floor': 'Piętro',
+        'area': 'Metraż',
+        'rooms': 'Liczba pokoi',
+        'offer_type_of_building': 'Typ budynku',
+        'market': 'Rynek',
+        'city_name': 'Miasto',
+        'voivodeship': 'Województwo',
+      
       };
       // Zmiana obrazu na "Palac.jpg"
       $("#zdjecie-prawo").attr("src", "static/Palac.jpg");
-  } else if (language === "en") {
+    } else if (language === "en") {
       translations = {
-          "Zaloguj": "Login",
-          'label[for="username"]': "Username:",
-          'label[for="password"]': "Password:",
-          ".Dane_uzytkownika": "User Data",
-          ".Wersja_programu": "Program version" + programVersion,
-          ".Autorzy": "Authors Jakub Kołodziej i Piotr Wieczorek",
-          ".title": "Real estate price estimation",
-          ".pokoje-tekst": "Rooms:",
-          ".powierzchnia-tekst": "Area:",
-          ".prognozowana-cena": "Forecasted Price",
-          ".active": "Home",
-          ".Funkcja1": "Function 1",
-          ".Funkcja2": "Function 2 ",
-          ".About": "About us",
-          ".Login": "Login",
-          ".offer_type": "Type of offer",
-          ".floor": "Floor",
-          ".area": "Area",
-          ".rooms": "Number of rooms",
-          "#offer_type_of_building": "Type of building",
-          "#market": "Market",
-          "#city_name": "City",
-          "#voivodeship": "Voivodeship",
-          // Dodaj inne tłumaczenia dla angielskiego tutaj
+        "Zaloguj": "Login",
+        'label[for="username"]': "Username:",
+        'label[for="password"]': "Password:",
+        ".Dane_uzytkownika": "User Data",
+        ".Wersja_programu": "Program version" + programVersion,
+        ".Autorzy": "Authors Jakub Kołodziej i Piotr Wieczorek",
+        ".title": "Real estate price estimation",
+        ".prognozowana-cena": "Forecasted Price",
+        ".active": "Home",
+        ".Funkcja1": "Function 1",
+        ".Funkcja2": "Function 2 ",
+        ".About": "About us",
+        ".Login": "Login",
+        ".Register": "Register",
+        "offer_type": "Type of offer",
+        'floor': 'Floor',
+        'area': 'Area',
+        'rooms': 'Number of rooms',
+        'offer_type_of_building': 'Type of building',
+        'market': 'Market',
+        'city_name': 'City',
+        'voivodeship': 'Voivodeship',
+      
+        // Dodaj inne tłumaczenia dla angielskiego tutaj
       };
 
       // Zmiana obrazu na "BigBen.jpg"
       $("#zdjecie-prawo").attr("src", "static/BigBen.jpg");
-  } else if (language === "spqr") {
+    } else if (language === "spqr") {
       translations = {
-          "Zaloguj": "Login",
-          'label[for="username"]': "Loginus:",
-          'label[for="password"]': "Password:",
-          ".Dane_uzytkownika": "User Data",
-          ".Wersja_programu": "Version program" + programVersion,
-          ".Autorzy": "Auctores Iacobus Wheelwright et Petrus Vesperi",
-          ".title": "Projecting verus praedium prices",
-          ".pokoje-tekst": "Rooms:",
-          ".powierzchnia-tekst": "Area:",
-          ".prognozowana-cena": "Data pretium",
-          ".active": "Home",
-          ".Funkcja1": "Officium 1",
-          ".Funkcja2": "Officium 2 ",
-          ".About": "De nobis",
-          ".Login": "Loginus",
-          '.offer_type': 'Generis offerendi',
-          '#area': 'Area',
-          '#rooms': 'Numerus cubiculorum',
-          '#offer_type_of_building': 'Generis aedificii',
-          '#market': 'Forum',
-          '#city_name': 'Urbs',
-          '#voivodeship': 'Provincia',
-          '.floor': 'Floors',
+        "Zaloguj": "Login",
+        'label[for="username"]': "Loginus:",
+        'label[for="password"]': "Password:",
+        ".Dane_uzytkownika": "User Data",
+        ".Wersja_programu": "Version program" + programVersion,
+        ".Autorzy": "Auctores Iacobus Wheelwright et Petrus Vesperi",
+        ".title": "Projecting verus praedium prices",
+        ".prognozowana-cena": "Data pretium",
+        ".active": "Home",
+        ".Funkcja1": "Officium 1",
+        ".Funkcja2": "Officium 2 ",
+        ".About": "De nobis",
+        ".Login": "Loginus",
+        ".Register": "Registration",
+        'offer_type': 'Generis offerendi',
+        'floor': 'Floors',
+        'area': 'Area',
+        'rooms': 'Numerus cubiculorum',
+        'offer_type_of_building': 'Generis aedificii',
+        'market': 'Forum',
+        'city_name': 'Urbs',
+        'voivodeship': 'Provincia',
+        
+        
+       
       };
 
-      // Zmiana obrazu na "Colosseum.jpg"
-      $("#zdjecie-prawo").attr("src", "static/Colosseum.jpg");
     }
 
     for (var key in translations) {
       if (translations.hasOwnProperty(key)) {
-        $(key).html(translations[key]);
+          if(key.startsWith('.')){
+              $(key).text(translations[key]);
+          } else {
+              $("label[for='" + key + "']").text(translations[key]);
+              $("#" + key).attr("placeholder", translations[key]);
+          }
       }
-    }
+  }
   }
 
   // Ustaw flagę Polski jako domyślnie wybraną

@@ -16,6 +16,8 @@
     justify-content: space-between;
     padding: 0 100px;
     overflow: visible;
+    position: fixed;
+    top: 0;
 }
 
 .Prognostica{
@@ -176,4 +178,3 @@
     max-height: 1000px;
     opacity: 1;
 }
-

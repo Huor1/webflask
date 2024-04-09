@@ -24,6 +24,7 @@ $(document).ready(function() {
         ".Name": "Nazwa",
         ".Password": "Hasło",
         ".About": "O nas",
+        ".Register": "Zarejestruj",
         // Dodaj inne tłumaczenia dla polskiego tutaj
       };
       // Zmiana obrazu na "Palac.jpg"
@@ -36,6 +37,7 @@ $(document).ready(function() {
         ".Name": "Name",
         ".Password": "Password",
         ".About": "About us",
+        ".Register": "Register",
         // Dodaj inne tłumaczenia dla angielskiego tutaj
       };
       // Zmiana obrazu na "BigBen.jpg"
@@ -48,6 +50,7 @@ $(document).ready(function() {
         ".Name": "Nomen",
         ".Password": "Password",
         ".About":"De nobis",
+        ".Register": "Registration",
 
         // Dodaj inne tłumaczenia dla SPQR tutaj
       };
