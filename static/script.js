@@ -116,7 +116,7 @@ $(document).ready(function() {
         ".Funkcja2": "Officium 2 ",
         ".About": "De nobis",
         ".Login": "Loginus",
-        ".Register": "Registration",
+        ".Register": "",
         'offer_type': 'Generis offerendi',
         'floor': 'Floors',
         'area': 'Area',
