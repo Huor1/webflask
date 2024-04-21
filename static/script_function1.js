@@ -1,8 +1,8 @@
 $(document).ready(function() {
     var programVersion = "Beta 0.19.3";
   
-    var imagesUKPL = ["static/zdj1_func1.jpeg", "static/zdj2_func1.jpeg", "static/zdj3_func1.jpg"];
-    var imagesSPQR = ["static/zdj1_func1_spqr.png", "static/zdj5.jpg", "static/zdj6.jpg"];
+    var imagesUKPL = ["static/zdj1_func1.jpeg", "static/zdj2_func1.jpg", "static/zdj3_func1.jpg"];
+    var imagesSPQR = ["static/zdj1_func1_spqr.png", "static/zdj2_func1_spqr.jpg", "static/zdj3_func1_spqr.jpg"];
     var currentImageIndex = 0;
     var clickedFlag = $("#flag1"); 
   
@@ -47,7 +47,8 @@ $(document).ready(function() {
               ".Funkcja1": "Funkcja 1",
               ".Funkcja2": "Funkcja 2 ",
               ".About": "O nas",
-              ".Login": "Login",
+              ".Login": "Zaloguj",
+              ".Register": "Zarejestruj",
                 "Mark": "Marka",
                 "Model": "Model",
                 "Year": "Rok",
@@ -70,6 +71,7 @@ $(document).ready(function() {
               ".Funkcja2": "Function 2 ",
               ".About": "About us",
               ".Login": "Login",
+              ".Register": "Register",
                 "Mark": "Brand",
                 "Model": "Model",
                 "Year": "Year",
@@ -92,6 +94,7 @@ $(document).ready(function() {
               ".Funkcja2": "Officium 2 ",
               ".About": "De nobis",
               ".Login": "Loginus",
+              ".Register": "Register",
                 "Mark": "Marca",
                 "Model": "Modelo",
                 "Year": "Annum",

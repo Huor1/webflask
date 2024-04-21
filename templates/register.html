@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="static/navbar.css">
     <link rel="stylesheet" href="static/bottombar.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="static/script.js"></script>
+    <script src="static/register.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='regislogin.css') }}">
     <title>Rejestracja</title>
 </head>
@@ -57,18 +57,18 @@
     <div class="box"> 
         <div class="form">
             <form method="POST" action="/register">
-                <h1>Rejestracja</h1>
+                <h1 class="Rejestracja">Rejestracja</h1>
                 <div class="inputBox">
                     <input type="text" id="username" name="username" required>
-                    <span>Nazwa użytkownika</span>
+                    <span class="username">Nazwa użytkownika</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
                     <input type="password" id="password" name="password" required>
-                    <span>Hasło</span>
+                    <span class="password">Hasło</span>
                     <i></i>
                 </div>
-                <input type="submit" value="Zarejestruj">
+                <input type="submit" id="submit" value="Zarejestruj">
             </form>
         </div>
     </div>
