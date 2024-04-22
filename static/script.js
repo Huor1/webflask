@@ -144,6 +144,49 @@ $(document).ready(function() {
   }
   }
 
+  var voivodeship = {
+      "Lower Silesia": ["Wrocław", "Wałbrzych", "Legnica", "Jelenia Góra", "Głogów", "Świdnica", "Nowa Ruda", "Oława", "Trzebnica"],
+      "Kuyavia-Pomerania": ["Bydgoszcz", "Toruń", "Włocławek", "Grudziądz", "Inowrocław", "Brodnica", "Świecie", "Nakło nad Notecią", "Chełmno"],
+      "Lublin": ["Lublin", "Zamość", "Chełm", "Puławy", "Biała Podlaska", "Łęczna", "Kraśnik", "Łuków", "Biłgoraj"],
+      "Lubusz": ["Gorzów Wielkopolski", "Zielona Góra", "Świebodzin", "Nowa Sól", "Kostrzyn nad Odrą", "Słubice", "Żary", "Gubin", "Sulechów"],
+      "Lodzkie": ["Łódź", "Piotrków Trybunalski", "Pabianice", "Tomaszów Mazowiecki", "Bełchatów", "Zgierz", "Ozorków", "Radomsko", "Skierniewice"],
+      "Lesser Poland": ["Kraków", "Tarnów", "Nowy Sącz", "Oświęcim", "Wieliczka", "Zakopane", "Nowy Targ", "Bochnia", "Chrzanów"],
+      "Masovia": ["Warszawa", "Radom", "Płock", "Siedlce", "Ostrołęka", "Pruszków", "Piaseczno", "Wołomin", "Żyrardów"],
+      "Opole": ["Opole", "Nysa", "Kędzierzyn-Koźle", "Brzeg", "Kluczbork", "Prudnik", "Strzelce Opolskie", "Głuchołazy", "Krapkowice"],
+      "Subcarpathia": ["Rzeszów", "Przemyśl", "Tarnobrzeg", "Krosno", "Mielec", "Dębica", "Sanok", "Stalowa Wola", "Jarosław"],
+      "Podlaskie": ["Białystok", "Łomża", "Suwałki", "Bielsk Podlaski", "Siemiatycze", "Grajewo", "Augustów", "Zambrów", "Wysokie Mazowieckie"],
+      "Pomerania": ["Gdańsk", "Gdynia", "Sopot", "Tczew", "Wejherowo", "Starogard Gdański", "Rumia", "Kościerzyna", "Puck"],
+      "Silesia": ["Katowice", "Gliwice", "Zabrze", "Bielsko-Biała", "Bytom", "Tychy", "Ruda Śląska", "Rybnik", "Chorzów"],
+      "Świętokrzyskie": ["Kielce", "Ostrowiec Świętokrzyski", "Starachowice", "Skarżysko-Kamienna", "Końskie", "Busko-Zdrój", "Jędrzejów", "Sandomierz", "Staszów"],
+      "Warmia-Masuria": ["Olsztyn", "Elbląg", "Ostróda", "Ełk", "Mrągowo", "Kętrzyn", "Giżycko", "Bartoszyce", "Iława"],
+      "Greater Poland": ["Poznań", "Kalisz", "Konin", "Piła", "Leszno", "Gniezno", "Ostrów Wielkopolski", "Jarocin", "Krotoszyn"],
+      "West Pomerania": ["Szczecin", "Koszalin", "Stargard Szczeciński", "Świnoujście", "Police", "Słupsk", "Gryfino", "Kołobrzeg", "Świdwin"] 
+}
+
+window.onload = function(){
+    const selectVoivodeship = document.getElementById('voivodeship'),
+          selectCity = document.getElementById('city_name');
+
+    selectCity.disabled = true;
+
+    // Załaduj województwa
+    for (let voivo in voivodeship) {
+        selectVoivodeship.options[selectVoivodeship.options.length] = new Option(voivo, voivo);
+    }
+
+    // Zamiana województw
+    selectVoivodeship.onchange = function() {
+        selectCity.disabled = false;
+        selectCity.length = 1; // Wyczyść poprzednie miasta
+        const citys = voivodeship[this.value];
+
+        citys.forEach(function(city) {
+            selectCity.add(new Option(city, city));
+        });
+    };
+}
+
+
   // Ustaw flagę Polski jako domyślnie wybraną
   $("#flag1").addClass("open");
 
