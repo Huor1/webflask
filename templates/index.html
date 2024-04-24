@@ -62,86 +62,94 @@
     </section>
     <section>
         <div class="Prognozowanie-obszar">
-          <form id="priceForm">
-            <div class="form-row-left">
-                <label for="offer_type">Sprzedawca:</label>
-                <select id="offer_type" name="offer_type" required>
-                    <option value="">Wybierz Sprzedawce</option>
-                    <option value="Private">Prywatny</option>
-                    <option value="Estate Agency">Agencja nieruchomości</option>
-                </select>
-        </div>
-        <div class="form-row-left">
-            <label for="floor">Piętro:</label>
-                <select id="floor" name="floor" required>
-                    <option value="">Wybierz Piętro</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                </select>
-        </div>
-        <div class="form-row-left">
-            <label for="area">Metraż:</label>
-            <input type="number" id="area" name="area" step="0.01" required><br>
-        </div>
-        <div class="form-row-left">
-            <label for="rooms">Liczba pokoi:</label>
-                <select id="rooms" name="rooms" required>
-                    <option value="">Wybierz Liczbe pokoi</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-        </div>
-        <div class="form-row-left">
-            <label for="offer_type_of_building">Typ budynku:</label>
-                <select id="offer_type_of_building" name="offer_type_of_building" required>
-                    <option value="">Wybierz Typ budynku</option>
-                    <option value="Apartament Building">Apartament</option>
-                    <option value="Housing Block">Blok mieszkalny</option>
-                    <option value="Tenement">Kamienica</option>
-                    <option value="Loft">Poddasze</option>
-                    <option value="Other">Inny</option>
-                </select>
-        </div>
-        <div class="form-row-right">
-            <label for="market">Market:</label>
-            <select id="market" name="market" required>
-                <option value="">Wybierz rodzaj marketu</option>
-                <option value="primary">Pierwotny</option>
-                <option value="aftermarket">Wtórny</option>
-            </select>
-        </div>
-        <div class="form-row-right">
-            <label for="voivodeship">Województwo:</label>
-                <select id="voivodeship" name="voivodeship" required>
-                    <option value="">Wybierz Województwo</option>
-                </select>
-        </div>
-        <div class="form-row-right">
-            <label for="city_name">Miasto:</label>
-                <select id="city_name" name="city_name" required>
-                    <option value="">Wybierz Miasto</option>
-                </select>
-        </div>
-            <button type="submit">Estymuj cenę</button>
-        </form>
+            <form id="priceForm">
+                <div class="form-row-left">
+                    <label for="offer_type">Sprzedawca:</label>
+                    <select id="offer_type" name="offer_type" required>
+                        <option value="">Wybierz Sprzedawce</option>
+                        <option value="Private">Prywatny</option>
+                        <option value="Estate Agency">Agencja nieruchomości</option>
+                    </select>
+                </div>
+
+                <div class="form-row-left">
+                    <label for="floor">Piętro:</label>
+                        <select id="floor" name="floor" required>
+                            <option value="">Wybierz Piętro</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                </div>
+
+                <div class="form-row-left">
+                    <label for="area">Metraż:</label>
+                    <input type="number" id="area" name="area" step="0.01" required><br>
+                </div>
+
+                <div class="form-row-left">
+                    <label for="rooms">Liczba pokoi:</label>
+                        <select id="rooms" name="rooms" required>
+                            <option value="">Wybierz Liczbe pokoi</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                </div>
+
+                <div class="form-row-left">
+                    <label for="offer_type_of_building">Typ budynku:</label>
+                        <select id="offer_type_of_building" name="offer_type_of_building" required>
+                            <option value="">Wybierz Typ budynku</option>
+                            <option value="Apartament Building">Apartament</option>
+                            <option value="Housing Block">Blok mieszkalny</option>
+                            <option value="Tenement">Kamienica</option>
+                            <option value="Loft">Poddasze</option>
+                            <option value="Other">Inny</option>
+                        </select>
+                </div>
+
+                <div class="form-row-right">
+                    <label for="market">Market:</label>
+                    <select id="market" name="market" required>
+                        <option value="">Wybierz rodzaj marketu</option>
+                        <option value="primary">Pierwotny</option>
+                        <option value="aftermarket">Wtórny</option>
+                    </select>
+                </div>
+
+                <div class="form-row-right">
+                    <label for="voivodeship">Województwo:</label>
+                        <select id="voivodeship" name="voivodeship" required>
+                            <option value="">Wybierz Województwo</option>
+                        </select>
+                </div>
+
+                <div class="form-row-right">
+                    <label for="city_name">Miasto:</label>
+                        <select id="city_name" name="city_name" required>
+                            <option value="">Wybierz Miasto</option>
+                        </select>
+                </div>
+
+                <button type="submit">Estymuj cenę</button>
+            </form>
     
-        <div id="result">
-          <h2>Estymowana cena:</h2>
-          <p id="estimatedPrice"></p>
-      </div>
+            <div id="result">
+                <h2>Estymowana cena:</h2>
+                <p id="estimatedPrice"></p>
+            </div>
   
-          </div>
+        </div>
         <img id="zdjecie-prawo" src="static/Palac.jpg" alt="Zdjęcie-prawo" class="palac-image" >
     </section>
     <footer>

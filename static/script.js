@@ -330,3 +330,48 @@ window.onload = function(){
   var defaultLanguage = $("#flag1").attr("data-lang");
   translateTitle(defaultLanguage);
 });
+
+
+
+
+document.getElementById('priceForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  var inputData = {
+    offer_type: document.getElementById('offer_type').value,
+    floor: document.getElementById('floor').value,
+    area: document.getElementById('area').value,
+    rooms: document.getElementById('rooms').value,
+    offer_type_of_building: document.getElementById('offer_type_of_building').value,
+    market: document.getElementById('market').value,
+    voivodeship: document.getElementById('voivodeship').value,
+    city_name: document.getElementById('city_name').value
+  };
+
+  console.log(inputData)
+
+  // Send POST request
+  fetch('http://localhost:5000/function1Result', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(inputData)
+  })
+  .then(response => {
+      // Check if response is ok
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      
+      return response.text();
+  })
+  .then(data => {
+      // Display the result in the <p> tag
+      document.getElementById('estimatedPrice').textContent = data;
+  })
+  .catch(error => {
+      // Handle errors
+      console.error('Error:', error);
+  });
+});

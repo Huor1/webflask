@@ -60,6 +60,10 @@
                 <input type="number" id="Year" name="Year" required><br>
             </div>
             <div class="form-row-left">
+                <label for="Mileage">Mileage:</label>
+                <input type="number" id="Mileage" name="Mileage" required><br>
+            </div>
+            <div class="form-row-left">
                 <label for="Vol_engine">Poj. silnika:</label>
                 <input type="number" id="Vol_engine" name="Vol_engine" required><br>
             </div>
@@ -77,8 +81,8 @@
             <button type="submit">Szacuj cenę</button>
         </form>
         <div id="result">
-            <h2>Szacowana cena:</h2>
-            <p id="estimatedPrice"></p>
+            <br>
+            <h2>Szacowana cena: <span id="estimatedPrice" style="color:white;font-weight:bold"></span> €</h2>
         </div>
     </div>
 </section>
@@ -92,6 +96,7 @@
         </div>
     </div>
 </footer>
+
 <script src="static/script_function1.js"></script>
 <script src="/usr/share/javascript/jquery/jquery.min.js"></script>
 <audio id="background-music" loop>
